@@ -1,0 +1,7 @@
+
+      body{ 
+background-image: url("https://lh3.googleusercontent.com/proxy/ZbKMw7t3rP3TG43kgkaGhoA3I76v7wBrJer-1cPZ5bPK_3iVm6cYDRRLZeGwa0l9oqOpg7YYV8z_YPeXVnSOKaHA4yhzmbsfOooIquJBRcJg_-06xff5tBmw8-Tcgsi7_EMMFha-YVaWX0xacL0657dwBwqMq-CMMlKwMSfccSFU=w1200-h630-p-k-no-nu");
+ background-color: #cccccc;
+ background-repeat:no-repeat;
+ background-size:cover
+ }

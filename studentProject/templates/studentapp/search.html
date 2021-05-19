@@ -1,0 +1,32 @@
+﻿
+{% extends 'studentapp/navbar.html' %}
+{% block child_block %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/search.css" %}">
+  <div  class="container mx-auto" >
+  
+        {% if searched %}
+        <h1> Please find your search results for {{searched}}</h1>
+            {% for student in list_students %}
+              <ul class="list-group">
+                <li class="list-group-item">Name: {{student.Name}}
+                    <br/>RollNumber : {{student.RollNumber}}
+                   <br/>Age : {{student.Age}}
+                    <br/>Gender : {{student.Gender}}
+                   </li>
+              </ul>
+      {% empty %}
+      <br/>
+        <h3>No Results for {{searched}}.<h3/>
+            {% endfor %}
+        {% else %}
+        <h1> Enter name to search </h1>
+        {% endif %}
+
+   
+</div>
+
+
+{% endblock %}
+
+

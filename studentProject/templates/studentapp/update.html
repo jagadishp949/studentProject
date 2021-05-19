@@ -1,0 +1,41 @@
+﻿{% extends 'studentapp/navbar.html' %}
+{% block child_block %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/reg.css" %}">
+  <div class="container">
+    <h2>Student Update Form</h2><hr />
+   {% if error %}
+          <div class="alert alert-danger" role="alert">
+ {{error}}
+</div>
+    {% endif %}
+      <form method="post">
+          {% csrf_token %}
+  Name: <input type="text" name="Name" value="{{student.Name}}">
+<p></p>
+     RollNumber: <input type="text" name="RollNumber" value="{{student.RollNumber}}">
+<p></p>
+        Age: <input type="text" name="Age" value="{{student.Age}}">
+<p></p>
+
+    Gender :<br/>  {% if student.Gender == 'M' %}
+            <input type="radio" id="male" name="Gender" value="M" checked>
+         <label for="male">Male</label><br>
+  <input type="radio" id="female" name="Gender"  value="F">
+          <label for="female">Female</label><br>
+          {% else %}
+           <input type="radio" id="male" name="Gender" value="M">
+         <label for="male">Male</label><br>
+
+     <input type="radio" id="female" name="Gender" value="F" checked>
+          <label for="female">Female</label><br>
+          {% endif %}
+		  
+          
+ 
+<p></p>
+      <input type="submit" class='btn btn-warning btn-lg' value="Update Record"> 
+           </form>
+
+</div>
+{% endblock %}

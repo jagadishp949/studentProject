@@ -1,0 +1,13 @@
+R:\personal\Assignmnet\studentProject\bin\Microsoft.PythonTools.WebRole.dll
+R:\personal\Assignmnet\studentProject\obj\Debug\attach_server.py
+R:\personal\Assignmnet\studentProject\obj\Debug\visualstudio_py_debugger.py
+R:\personal\Assignmnet\studentProject\obj\Debug\visualstudio_py_repl.py
+R:\personal\Assignmnet\studentProject\obj\Debug\visualstudio_py_util.py
+R:\personal\Assignmnet\studentProject\obj\Debug\__init__.py
+R:\personal\Assignmnet\studentProject\obj\Debug\__main__.py
+R:\personal\Assignmnet\studentProject\bin\AzureSetup.cfg
+R:\personal\Assignmnet\studentProject\bin\Microsoft.PythonTools.AzureSetup.exe
+R:\personal\Assignmnet\studentProject\bin\Microsoft.PythonTools.AzureSetup.exe.config
+R:\personal\Assignmnet\studentProject\bin\wfastcgi.py
+R:\personal\Assignmnet\studentProject\obj\Debug\web.config
+R:\personal\Assignmnet\studentProject\obj\Debug\web.debug.config

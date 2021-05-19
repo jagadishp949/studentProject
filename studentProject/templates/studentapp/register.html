@@ -1,0 +1,20 @@
+﻿{% extends 'studentapp/navbar.html' %}
+{% block child_block %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/reg.css" %}">
+      <div class="container">
+    <h1>Student Registration Page</h1><hr />
+    {% if error %}
+          <div class="alert alert-danger" role="alert">
+ {{error}}
+</div>
+    {% endif %}
+    <form method="post" name="">
+         <div class="form-group">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Register">
+    </div>
+  </form>
+         </div>
+  {% endblock %}

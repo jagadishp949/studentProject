@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+{% extends 'studentapp/navbar.html' %}
+{% block child_block %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/home.css" %}">
+  <div  class="container" >
+      
+  <br />
+    <a href="/insert" style="float:right" class='btn btn-primary btn-lg'>
+       
+Do You Want to Insert StudentDetails</a>
+     <br /> <br /><br />
+      {% if details %}
+       <h3 class="text-center">Student Information Dash board</h3> 
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Roll Number</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in details %}
+      <tr>
+   
+          <td>{{student.Name}}</td>
+          <td>{{student.RollNumber}}</td>
+           <td>{{student.Age}}</td>
+          <td>{{student.Gender}}</td>
+          <td>
+              <a href="/update/{{student.RollNumber}}"class="btn btn-warning" >update</a> 
+          </td>
+      </tr>
+      {% endfor%}
+        {% else %}
+           <h3 class="text-center">There are no students Records..insert the student Details</h3> 
+       {% endif %}
+    </tbody>
+  </table>
+</div>
+
+
+{% endblock %}
+
+
